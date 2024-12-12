@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import UserModel from "./Models/UserModels.js";
-import PostModel from "./Models/Posts.js";
+import PostModel from "./Models/PostModel.js";
 import bcrypt from "bcrypt";
 import multer from "multer";
 import { fileURLToPath } from "url";
