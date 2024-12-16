@@ -2,7 +2,7 @@
 import { UserData } from '../Validations/ExampleData';
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import * as ENV from "../config";
 
 const initialState = {
     user: {},
