@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 const connectString =
-  "mongodb+srv://admin:admin@postitcluster.mzuti.mongodb.net/postITDB?retryWrites=true&w=majority&appName=PostITCluster";
+  `mongodb+srv://${ENV.DB_USER}:${ENV.DB_PASSWORD}@${ENV.DB_CLUSTER}/${ENV.DB_NAME}?retryWrites=true;
 
 mongoose.connect(connectString, {
   useNewUrlParser: true,
